@@ -18,11 +18,11 @@ _EOF_
 }
 
 msg() {
-	printf '\033[1m[live-audio]\033[m $@\n' 1>&2
+	printf "\033[1m[live-audio]\033[m %s\n" "$1" 1>&2
 }
 
 bugout() {
-    msg "$@"
+    msg "$1"
     exit 1
 }
 
